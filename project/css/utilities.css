@@ -1,0 +1,14 @@
+@import url('/project/css/variables.css');
+
+.container {
+    width: calc(100% - 1.5rem);
+    max-width: 33.75rem;
+    margin-inline: auto;
+}
+
+.dark-mode {
+    --text-color: rgb(255, 255, 255);
+    --background-color: rgb(18, 18, 18);
+    --input-background-color: rgb(39, 39, 39);
+    --theme-button-color: brightness(0) saturate(100%) invert(99%) sepia(97%) saturate(1%) hue-rotate(53deg) brightness(104%) contrast(100%);
+}

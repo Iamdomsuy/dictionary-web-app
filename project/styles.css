@@ -1,0 +1,102 @@
+@import url('/project/css/resets.css');
+@import url('/project/css/variables.css');
+@import url('/project/css/utilities.css');
+
+
+/*NAVBAR*/
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.navbar__logo {
+    font-size: clamp(1.125rem, 0.9688rem + 0.8333vw, 1.25rem);
+    font-weight: bold;
+    opacity: 90%;
+}
+
+button.navbar__theme-btn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+button.navbar__theme-btn img {
+    display: grid;
+    place-items: center;
+    filter: var(--theme-button-color);
+    width: 24px;
+    height: 24px;
+}
+
+/*HEADER*/ 
+
+
+header.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h1.header__title, 
+h3.header__subtitle {
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+}
+
+h1.header__title {
+    font-size: clamp(1.375rem, 1.0625rem + 1.6667vw, 1.625rem);
+    font-weight: 700;
+    opacity: 90%;
+}
+
+h3.header__subtitle {
+    font-size: clamp(1.125rem, 0.9688rem + 0.8333vw, 1.25rem);
+    font-weight: 400;
+    opacity: 60%;
+}
+
+div.header__search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+input.header__search-input {
+    flex: 1;
+    padding-left: 12px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+}
+
+input.header__search-input:focus { 
+    outline: 2px solid var(--ascent-color);
+}
+
+button.header__search-button {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 4px;
+    background: transparent;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+button.header__search-button img {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(82%) saturate(3787%) hue-rotate(187deg) brightness(102%) contrast(91%);
+    width: 24px;
+    height: 24px;
+}
+
+
+

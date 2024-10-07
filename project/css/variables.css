@@ -1,0 +1,10 @@
+:root {
+    /*COLORS*/
+    --text-color: rgb(18, 18, 18);
+    --background-color: rgb(255, 255, 255);
+    --ascent-color: rgb(32, 148, 243); 
+    --input-background-color: rgb(233, 233, 233);
+    --theme-button-color: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(4148%) hue-rotate(339deg) brightness(94%) contrast(86%);
+
+    /*FONTS*/
+}
