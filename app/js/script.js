@@ -10,8 +10,6 @@ function theme() {
 
     if (document.body.classList.contains('dark-theme')) {
         localStorage.setItem("theme", "dark-theme");
-        console.log(getTheme);
-        
     } else {
         localStorage.removeItem("theme");
     }

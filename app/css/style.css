@@ -79,16 +79,6 @@ body {
     line-height: var(--line-height-base);
 }
 
-h1 {
-    font-size: var(--font-large-size);
-    font-weight: var( --font-weight-bold);
-}
-
-h2 {
-    font-size: var(--font-medium-size);
-    font-weight: var(--font-weight-regular);
-}
-
 p {
     font-size: var(--font-small-size);
 }
@@ -128,9 +118,67 @@ nav.navbar > button.navbar__theme img {
     height: 24px; 
 }
 
+/*HEADER*/
+
+header.header {
+   padding-top: 24px;
+}
+
+header.header > form.header__search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} 
+
+header.header > form.header__search > input.header__search-input {
+    flex: 1;
+    height: 45px;
+    padding-left: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+header.header > form.header__search > input.header__search-input:focus {
+    border: 2px solid var(--color-primary);
+}
+
+header.header > form.header__search > button.header__search-button {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    padding: 10px 15px 10px 15px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+header.header > form.header__search > button.header__search-button > img {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(82%) saturate(3787%) hue-rotate(187deg) brightness(102%) contrast(91%);
+    width: 24px;
+    height: 24px;
+}
 
 /*THEME*/
 
+/*LIGHT-THEME*/
+body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary-black);
+}
+
+body > nav.navbar > a.navbar__logo {
+    color: var(--color-text-primary-black);
+}
+
+body > nav.navbar > button.navbar__theme > img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(16%) hue-rotate(314deg) brightness(95%) contrast(105%);
+}
+
+body > header.header > form.header__search > input.header__search-input {
+    background-color: var(--color-input-bg-light);
+    color: inherit;
+}
 
 /*DARK-THEME*/
 body.dark-theme {
@@ -144,6 +192,11 @@ body.dark-theme > nav.navbar > a.navbar__logo {
 
 body.dark-theme > nav.navbar > button.navbar__theme > img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(104%) contrast(102%);
+}
+
+body.dark-theme > header.header > form.header__search > input.header__search-input {
+    background-color: var(--color-input-bg-dark);
+    color: inherit;
 }
 
 
